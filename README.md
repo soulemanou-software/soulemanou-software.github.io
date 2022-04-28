@@ -8,14 +8,14 @@
 ## Built With
 
 - Major languages
-    html
-    css
+    -html
+    -css
 - Frameworks
 
 - Technologies used
-    browser
-    html,css
-    figma tools
+    -browser
+    -html,css
+    -figma tools
 
 
 ## Live Demo (if available)
