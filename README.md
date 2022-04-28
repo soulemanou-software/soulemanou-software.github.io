@@ -8,14 +8,14 @@
 ## Built With
 
 - Major languages
-    -html
-    -css
+    1. *html*
+    2. *css*
 - Frameworks
 
 - Technologies used
-    -browser
-    -html,css
-    -figma tools
+    1. *browser*
+    2. *html,css*
+    3. *figma tools*
 
 
 ## Live Demo (if available)
@@ -46,9 +46,8 @@ To get a local copy up and running follow these simple example steps.
 
 
 ## Authors
-**SOULEMANOU KUNCHIEFUH BABANOU**
 👤 **Author1**
-
+**SOULEMANOU KUNCHIEFUH BABANOU**
 - GitHub: [@githubhandle](https://github.com/githubhandle)
 - Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
 - LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
