@@ -8,15 +8,15 @@
 ## Built With
 
 - Major languages
-    ##html
-    ##css
-    ##js
+    *html*
+    *css*
+    *js*
 - Frameworks
 
 - Technologies used
-    *~~browser~~*
-    *~~html,css~~*
-    *~~figma tools~~*
+    **browser**
+    **html,css**
+    **figma tools**
 
 
 ## Live Demo (if available)
