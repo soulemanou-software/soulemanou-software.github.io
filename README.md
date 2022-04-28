@@ -1,15 +1,23 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# Project Name
+# Project Name: Portfolio
 
 > Description the project.
-
+>This project shows all my abilities as a software developer  and also as a frontEnd developer 
 
 ## Built With
 
 - Major languages
+    ##html
+    ##css
+    ##js
 - Frameworks
+
 - Technologies used
+    *~~browser~~*
+    *~~html,css~~*
+    *~~figma tools~~*
+
 
 ## Live Demo (if available)
 
@@ -39,7 +47,7 @@ To get a local copy up and running follow these simple example steps.
 
 
 ## Authors
-
+**SOULEMANOU KUNCHIEFUH BABANOU**
 👤 **Author1**
 
 - GitHub: [@githubhandle](https://github.com/githubhandle)
