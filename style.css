@@ -1,9 +1,9 @@
-/*here is the main parent html-style*/ 
+/*here is the main parent of html-style*/ 
 *{
     margin: 0px;
     padding:0px;
 }
-/*mobile menu*/
+/*mobile menu bar*/
 #toolbar{
     position: sticky;
     display:flex;
@@ -17,6 +17,7 @@
     color:#FFFFFF;
 
 }
+/*user name at the menu*/
 .name_div{
     font-family: 'Roboto';
     font-style: normal;
@@ -24,10 +25,12 @@
     font-size: 18px;
     line-height: 24px;
 }
+/*the mobile menu icon*/
 .menu_icon{
     height: 24px;
     width: 24px;
 }
+/*headlines contaner*/
 #headlines{
     display: grid;
     height: 597px;
@@ -35,12 +38,14 @@
     border-radius: 0px;
     background: #1C1A19;
 }
+/*headlines test*/
 .headline_texts{
     width: 327px;
     margin: 24px;
     position: relative;
     top: 120px
 }
+/*social media links*/
 .social_media{
     display:flex;
     flex-direction:row;
