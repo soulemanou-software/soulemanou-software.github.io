@@ -118,8 +118,7 @@ h3{
     margin: 10px 0px -19px 0px;
 }
 #illustration-png{
-    position: absolute;
-    left:52%;
-    right: -15%;
-    bottom: 25%;
+    position: relative;
+    left:61%;
+    bottom: 33%;
 }
