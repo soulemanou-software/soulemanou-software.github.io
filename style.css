@@ -1,0 +1,120 @@
+/*here is the main parent html-style*/ 
+*{
+    margin: 0px;
+    padding:0px;
+}
+/*mobile menu*/
+#toolbar{
+    position: sticky;
+    display:flex;
+    flex-direction: row;
+    justify-content:center;
+    align-items:center;
+    gap:130px;
+    background-color:#3C3A39;
+    width: 377px;
+    height: 48px;
+    color:#FFFFFF;
+
+}
+.name_div{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 24px;
+}
+.menu_icon{
+    height: 24px;
+    width: 24px;
+}
+#headlines{
+    display: grid;
+    height: 597px;
+    width: 377px;
+    border-radius: 0px;
+    background: #1C1A19;
+}
+.headline_texts{
+    width: 327px;
+    margin: 24px;
+    position: relative;
+    top: 120px
+}
+.social_media{
+    display:flex;
+    flex-direction:row;
+    justify-content:center;
+    align-items: center;
+    height: 30px;
+    width: 210px;
+    gap: 3ch;
+}
+.social_media > img{
+   
+    height: 20px;
+    width: 18px;
+    border-radius: 0px;
+
+}
+h1{
+    position: static;
+    width: 327px;
+    height: 124px;
+    left: 24px;
+    top: 120px;
+    font-family: 'Crete Round';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 56px;
+    line-height: 64px;
+    letter-spacing: 0.37px;
+    color: #FF6B00;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    margin: 12px 0px;
+}
+h3{
+    
+    position: static;
+    width: 327px;
+    height: 27px;
+    left: 24px;
+    top: 256px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 32px;
+    display: flex;
+    align-items: center;
+    color: #FFF5E1;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+    margin: 12px 0px;
+}
+.description{
+    position: static;
+    width: 327px;
+    height: 123px;
+    left: 24px;
+    top: 295px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #FFFFFF;
+    flex: none;
+    order: 2;
+    flex-grow: 0;
+    margin: 10px 0px -19px 0px;
+}
+#illustration-png{
+    position: absolute;
+    left:52%;
+    right: -15%;
+    bottom: 25%;
+}
