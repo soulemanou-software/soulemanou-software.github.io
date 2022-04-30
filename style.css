@@ -40,7 +40,7 @@ a {
 
 /*  headlines contaner  */
 #headlines {
-  display: grid;
+  display: flex;
   height: 39.5em;
   width: auto;
   border-radius: 0;
