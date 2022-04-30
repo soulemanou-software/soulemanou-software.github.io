@@ -58,11 +58,11 @@ To get a local copy up and running follow these simple example steps.
     
 ### Deployment
 1. *copy the link of the repository document*
-2. *use git to clone the repository *(ex: git clone <repository link here>)**
+2. *use git to clone the repository *(ex: git clone <repository link here>)* *
  3. *open the cloned repository using your editor as a new windows and as a folder*
 4. *click or select  the index.html file and run as live-server*
 **OR to just view the result**
-    1.*just open the cloned repository and double-click on the index.html file *
+    1. *just open the cloned repository and double-click on the index.html file *
      
 ## Authors
 👤 **Author1**
