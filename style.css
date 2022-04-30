@@ -1,121 +1,131 @@
-/*  here is the main parent of html-style  */ 
+/*  here is the main parent of html-style  */
 * {
-    margin: 0px;
-    padding:0px;
+  margin: 0;
+  padding: 0;
 }
+
 /*  mobile menu bar  */
 #toolbar {
-    position: sticky;
-    display:flex;
-    flex-direction: row;
-    justify-content:center;
-    align-items:center;
-    gap:130px;
-    background-color:#3C3A39;
-    width: 377px;
-    height: 48px;
-    color:#FFFFFF;
+  position: sticky;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 130px;
+  background-color: #3c3a39;
+  width: 377px;
+  height: 48px;
+  color: #fff;
 }
+
 /*  user name at the menu  */
 .name_div {
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 24px;
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 24px;
 }
+
 /* the mobile menu icon */
 .menu_icon {
-    height: 24px;
-    width: 24px;
+  height: 24px;
+  width: 24px;
 }
+
 /*  headlines contaner  */
 #headlines {
-    display: grid;
-    height: 597px;
-    width: 377px;
-    border-radius: 0px;
-    background: #1C1A19;
+  display: grid;
+  height: 597px;
+  width: 377px;
+  border-radius: 0;
+  background: #1c1a19;
 }
+
 /*  headlines test  */
 .headline_texts {
-    width: 327px;
-    margin: 24px;
-    position: relative;
-    top: 120px
+  width: 327px;
+  margin: 24px;
+  position: relative;
+  top: 120px;
 }
+
 /*  social media links  */
 .social_media {
-    display:flex;
-    flex-direction:row;
-    justify-content:center;
-    align-items: center;
-    height: 30px;
-    width: 210px;
-    gap: 3ch;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 30px;
+  width: 210px;
+  gap: 3ch;
 }
-.social_media>img {
-    height: 20px;
-    width: 18px;
-    border-radius: 0px;
 
+.social_media > img {
+  height: 20px;
+  width: 18px;
+  border-radius: 0;
 }
+
 h1 {
-    position: static;
-    width: 327px;
-    height: 124px;
-    left: 24px;
-    top: 120px;
-    font-family: 'Crete Round';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 56px;
-    line-height: 64px;
-    letter-spacing: 0.37px;
-    color: #FF6B00;
-    flex: none;
-    order: 0;
-    flex-grow: 0;
-    margin: 12px 0px;
+  position: static;
+  width: 327px;
+  height: 124px;
+  left: 24px;
+  top: 120px;
+  font-family: 'Crete Round', serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 56px;
+  line-height: 64px;
+  letter-spacing: 0.37px;
+  color: #ff6b00;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  margin: 12px 0;
 }
+
 h3 {
-    position: static;
-    width: 327px;
-    height: 27px;
-    left: 24px;
-    top: 256px;
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 24px;
-    line-height: 32px;
-    display: flex;
-    align-items: center;
-    color: #FFF5E1;
-    flex: none;
-    order: 1;
-    flex-grow: 0;
-    margin: 12px 0px;
+  position: static;
+  width: 327px;
+  height: 27px;
+  left: 24px;
+  top: 256px;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 32px;
+  display: flex;
+  align-items: center;
+  color: #fff5e1;
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+  margin: 12px 0;
 }
+
 .description {
-    position: static;
-    width: 327px;
-    height: 123px;
-    left: 24px;
-    top: 295px;
-    font-family: 'Poppins';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 24px;
-    color: #FFFFFF;
-    flex: none;
-    order: 2;
-    flex-grow: 0;
-    margin: 10px 0px -19px 0px;
+  position: static;
+  width: 327px;
+  height: 123px;
+  left: 24px;
+  top: 295px;
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #fff;
+  flex: none;
+  order: 2;
+  flex-grow: 0;
+  margin: 10px 0 -19px 0;
 }
+
 #illustration-png {
-    position: relative;
-    left:61%;
-    bottom: 33%;
+  position: relative;
+  left: 61%;
+  bottom: 33%;
 }
