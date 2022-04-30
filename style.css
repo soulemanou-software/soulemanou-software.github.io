@@ -11,43 +11,53 @@
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  gap: 130px;
+  gap: 9em;
   background-color: #3c3a39;
-  width: 377px;
-  height: 48px;
-  color: #fff;
+  width: auto;
+  height: 2.5em;
 }
 
 /*  user name at the menu  */
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
 .name_div {
   font-family: 'Roboto', sans-serif;
   font-style: normal;
   font-weight: 700;
-  font-size: 18px;
-  line-height: 24px;
+  font-size: 105%;
+  line-height: 100%;
+  color: #fff;
 }
 
 /* the mobile menu icon */
 .menu_icon {
-  height: 24px;
-  width: 24px;
+  height: 1.5em;
+  width: 8%;
 }
 
 /*  headlines contaner  */
 #headlines {
-  display: grid;
-  height: 623px;
-  width: 377px;
+  display: flex;
+  height: 39.5em;
+  width: auto;
   border-radius: 0;
   background: #1c1a19;
+  background-image: url("Resources/Images/illustration-header-mobile.png");
+  background-repeat: no-repeat;
+  background-size: 40%;
+  background-position: 100% 120%;
 }
 
 /*  headlines test  */
 .headline_texts {
-  width: 327px;
-  margin: 24px;
+  height: 60%;
+  width: 85.5%;
+  margin: 7%;
   position: relative;
-  top: 120px;
+  top: 20%;
 }
 
 /*  social media links  */
@@ -56,14 +66,15 @@
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  height: 30px;
-  width: 210px;
-  gap: 3ch;
+  height: 11%;
+  width: 60%;
+  gap: 1ch;
+  list-style: none;
 }
 
 .social_media > img {
-  height: 20px;
-  width: 18px;
+  height: 50%;
+  width: 50%;
   border-radius: 0;
 }
 
@@ -89,7 +100,7 @@ h1 {
 h3 {
   position: static;
   width: 327px;
-  height: 27px;
+  height: 8%;
   left: 24px;
   top: 256px;
   font-family: "Roboto", sans-serif;
@@ -108,8 +119,8 @@ h3 {
 
 .description {
   position: static;
-  width: 327px;
-  height: 123px;
+  width: 100%;
+  height: 32%;
   left: 24px;
   top: 295px;
   font-family: "Poppins", sans-serif;
