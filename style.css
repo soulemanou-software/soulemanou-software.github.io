@@ -13,15 +13,16 @@
   align-items: center;
   gap: 9em;
   background-color: #3c3a39;
-  width:auto;
+  width: auto;
   height: 2.5em;
 }
 
 /*  user name at the menu  */
-a{
+a {
   text-decoration: none;
   color: #fff;
 }
+
 .name_div {
   font-family: 'Roboto', sans-serif;
   font-style: normal;
@@ -41,7 +42,7 @@ a{
 #headlines {
   display: grid;
   height: 39.5em;
-  width:auto;
+  width: auto;
   border-radius: 0;
   background: #1c1a19;
   background-image: url("Resources/Images/illustration-header-mobile.png");
@@ -70,9 +71,7 @@ a{
   gap: 1ch;
   list-style: none;
 }
-.social_media > li {
-  
-}
+
 .social_media > img {
   height: 50%;
   width: 50%;
@@ -135,5 +134,3 @@ h3 {
   flex-grow: 0;
   margin: 10px 0 1px 0;
 }
-
-
