@@ -36,7 +36,7 @@
 /*  headlines contaner  */
 #headlines {
   display: grid;
-  height: 597px;
+  height: 623px;
   width: 377px;
   border-radius: 0;
   background: #1c1a19;
@@ -121,7 +121,7 @@ h3 {
   flex: none;
   order: 2;
   flex-grow: 0;
-  margin: 10px 0 -19px 0;
+  margin: 10px 0 1px 0;
 }
 
 #illustration-png {
