@@ -19,7 +19,6 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  width: auto;
 }
 
 /* The navigation selector */
@@ -28,7 +27,8 @@ nav {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  padding: 1.8rem 1.8rem 1rem 1.8rem;
+  width: auto;
+  padding: 1.8rem 2rem 1rem 2rem;
   background: var(--navcolor);
 }
 
@@ -44,25 +44,25 @@ nav > a {
 #headline {
   display: flex;
   flex-direction: column;
-  height: 29.2rem;
+  height: 25.2rem;
   background: var(--bkcolor);
   padding: 6rem 2rem 2rem 2rem;
   background-image: url(Resources/Images/illustration-header-mobile.png);
   background-repeat: no-repeat;
-  background-position: right 10rem;
-  background-size: 9rem;
+  background-position: right 17rem;
+  background-size: 6.3rem;
 }
 
-#headline > .mainhead {
+#headline > #mainhead {
   color: var(--maincolor);
   font-family: 'Crete Round', serif;
   font-weight: 400;
   line-height: 3.5rem;
   font-size: 3rem;
-  margin-top: 4rem;
+  margin-top: .5rem;
 }
 
-.mainhead> span {
+#mainhead> span {
   display: block;
 }
 
@@ -112,17 +112,17 @@ nav > a {
 
 /* work selector */
 #work {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+  display: grid;
+  grid-template-columns:1fr;
+  grid-template-rows: auto;
   height: auto;
   background: var(--txtcolor);
   color: var(--txtcolor2);
   padding: 0rem 2rem 3rem 2rem;
 }
 
-#work > h2 {
-  margin: 5rem 0;
+#work > .first-box>h2 {
+  margin: 5rem 2rem 5rem 0rem;
   font-size: 2.3rem;
   font-family: 'Crete Round', serif;
   font-weight: 500;
@@ -130,19 +130,25 @@ nav > a {
   padding: 2rem 1rem 2rem 0;
   border-bottom: 1.5px solid var(--line);
 }
-
-#work > img {
-  padding-bottom: 2rem;
+.first-box{
+  margin-right: 1.8rem;
 }
 
-#work > h2 {
+#work > .first-box>img {
+  width: 19.2rem;
+  padding-bottom: 2rem;
+  padding-right: 2rem;
+}
+
+#work > .first-box> h3{
   font-family: 'Crete Round', serif;
   font-weight: 300;
   font-size: 2rem;
 }
-#work > p {
+#work > .first-box>p {
   font-family: 'Inter', sans-serif;
   padding-top: 0.5rem;
+  margin-right: 1.98rem;
   font-weight: 400;
   line-height: 1.5rem;
   max-width: 20rem;
@@ -154,21 +160,21 @@ nav > a {
   flex-grow: 0;
 }
 
-#work > ul {
+#work > .first-box> ul {
   list-style-type: none;
   display: flex;
   flex-direction: row;
   padding: 1rem 0;
 }
 
-#work > ul > li {
+#work > .first-box>ul > li {
   font-family: 'Inter', sans-serif;
   border: 1px solid var(--line);
   padding: 0.5rem;
   margin-right: 0.5rem;
 }
 
-#work > button {
+#work > .first-box>button {
   background: var(--maincolor);
   border: none;
   width: 7rem;
@@ -181,17 +187,17 @@ nav > a {
 
 /* work carts selector */
 #work > .cart {
-  display: grid;
-  grid-template-columns: 1;
-  grid-template-rows: 4;
+  display: flexbox;
+  flex-direction: column;
   margin-top: 2rem;
-  padding-top: 7rem;
-  height: 18.8rem;
+  margin-bottom: 1rem;
+  padding-top: 2.5rem;
+  height: 20rem;
   width: 19.5rem;
   left: 0;
   top: 0;
-  border-radius: 0;
   border: none;
+  border-radius: 0;
   background: url(Resources/Images/Img-Placeholder.png);
   color: var(--txtcolor);
 }
@@ -206,7 +212,7 @@ nav > a {
   color: var(--maincolor);
 }
 
-#contact h2 {
+#contact> h2{
   font-family: 'Inter', sans-serif;
   display: flex;
   flex-direction: column;
@@ -221,7 +227,7 @@ nav > a {
   color: var(--txtcolor2);
 }
 
-#work > .cart > h2 {
+#work > .cart > h2{
   padding: 0.5rem 1rem;
   font-weight: 500;
   font-family: 'Crete Round', serif;
@@ -276,7 +282,7 @@ nav > a {
   align-items: center;
   width: auto;
   height: 2rem;
-  padding: 0 1rem;
+  padding: .5rem 1rem;
   margin: 0.5rem 0.5rem 0.5rem 0;
   background-color: var(--colorb);
 }
@@ -298,8 +304,11 @@ nav > a {
 
 #work .cart > button {
   height: 3rem;
-  margin: 0;
-  width: auto;
+  margin-top: 1rem;
+  margin-bottom: 0rem;
+  margin-left: 0rem;
+  margin-right: 0rem;
+  width: 19.5rem;
   border-radius: 0%;
   border: none;
   font-family: 'Inter', sans-serif;
@@ -370,7 +379,7 @@ nav > a {
   display: flex;
   justify-content: center;
   flex-direction: column;
-  padding: 6rem 2rem;
+  padding: 4rem 2rem;
 }
 
 #contact form {
@@ -378,6 +387,7 @@ nav > a {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  margin-bottom:0rem;
 }
 
 input[type="text"],
@@ -401,9 +411,9 @@ input[type="email"] {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding-bottom: 0;
-  margin-top: 15rem;
-  margin-bottom: 0;
+  padding-bottom: 0rem;
+  margin-top: 4rem;
+  margin-bottom: 0rem;
   border: 2px solid var(--navcolor);
   border: none;
   border-top: 1px solid var(--navcolor);
