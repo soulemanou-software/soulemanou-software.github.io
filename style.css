@@ -44,16 +44,16 @@ nav > a {
 #headline {
   display: flex;
   flex-direction: column;
-  height: auto;
+  height: 29.2rem;
   background: var(--bkcolor);
   padding: 6rem 2rem 2rem 2rem;
   background-image: url(Resources/Images/illustration-header-mobile.png);
   background-repeat: no-repeat;
-  background-position: right 19rem;
-  background-size: 7rem;
+  background-position: right 10rem;
+  background-size: 9rem;
 }
 
-#headline > h1 {
+#headline > .mainhead {
   color: var(--maincolor);
   font-family: 'Crete Round', serif;
   font-weight: 400;
@@ -62,7 +62,7 @@ nav > a {
   margin-top: 4rem;
 }
 
-#headline > h1 > span {
+.mainhead> span {
   display: block;
 }
 
@@ -85,7 +85,6 @@ nav > a {
   flex-grow: 0;
   margin: 0 0;
 }
-
 .footericon > ul {
   list-style-type: none;
   display: flex;
@@ -96,7 +95,6 @@ nav > a {
   padding-bottom: 0.5rem;
   padding-left: 0.5rem;
 }
-
 #headline > ul {
   list-style-type: none;
   display: flex;
@@ -120,10 +118,10 @@ nav > a {
   height: auto;
   background: var(--txtcolor);
   color: var(--txtcolor2);
-  padding: 0 2rem 3rem 2rem;
+  padding: 0rem 2rem 3rem 2rem;
 }
 
-#work > h1 {
+#work > h2 {
   margin: 5rem 0;
   font-size: 2.3rem;
   font-family: 'Crete Round', serif;
@@ -142,7 +140,6 @@ nav > a {
   font-weight: 300;
   font-size: 2rem;
 }
-
 #work > p {
   font-family: 'Inter', sans-serif;
   padding-top: 0.5rem;
@@ -199,7 +196,7 @@ nav > a {
   color: var(--txtcolor);
 }
 
-#about > h1 {
+#about > h2 {
   font-family: 'Crete Round', serif;
   font-size: 4rem;
   font-weight: 400;
@@ -209,7 +206,7 @@ nav > a {
   color: var(--maincolor);
 }
 
-#contact h1 {
+#contact h2 {
   font-family: 'Inter', sans-serif;
   display: flex;
   flex-direction: column;
@@ -224,7 +221,7 @@ nav > a {
   color: var(--txtcolor2);
 }
 
-#work > .cart > h1 {
+#work > .cart > h2 {
   padding: 0.5rem 1rem;
   font-weight: 500;
   font-family: 'Crete Round', serif;
@@ -328,13 +325,11 @@ nav > a {
   background-repeat: no-repeat;
   background-position: right 20rem;
 }
-
 .line,
 .line1 {
   border: 1px solid #dbd8d7;
   margin: 1rem 0;
 }
-
 #about > .line {
   background: var(--line);
   border: 1px solid var(--txtcolor);
@@ -397,6 +392,8 @@ input[type="email"] {
   border: none;
   padding: 0 1rem;
 }
+
+
 
 .footericon {
   display: flex;
