@@ -11,11 +11,14 @@
   --bkcolor: #1C1A19;
   --line:#212121;
   --colorb: #FFFFFF3D;
+  --backc:#FBF8F7;
+
 }
 body{
   display:flex;
   flex-direction:column;
   justify-content: center;
+  width:auto;
 }
 /*The navigation selector*/
 nav{
@@ -303,4 +306,107 @@ nav> a{
   line-height: 43px;
   letter-spacing: 0em;
   text-align: center;
+}
+/*contact selector */
+#contact{
+  background: var(--txtcolor);
+  margin-top: 1rem;
+  display:flex;
+  justify-content:center;
+  flex-direction: column;
+  padding: 6rem 2rem;
+}
+#contact form{
+  font-family: 'Inter', sans-serif;
+  display: flex;
+  flex-direction:column;
+  justify-content:center;
+}
+#contact h1{
+  font-family: 'Inter', sans-serif;
+  display: flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items: center;
+  text-align: center;
+  height: 216px;
+  padding: 0rem;
+  width: 19.3rem;
+  left: 0px;
+  top: 0px;
+  color: var(--txtcolor2);
+}
+input[type="text"] , input[type="email"]{
+  font-family: 'Inter', sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: left;
+  color:#FF6B00;
+  border: none;
+  padding: 0rem 1rem; 
+}
+.line,.line1{
+  border: 1px solid #DBD8D7;
+  ;
+  margin: 1rem 0rem;
+}
+.footericon{
+  display: flex;
+  position: relative;  
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 0rem;
+  margin-top: 15rem;
+  margin-bottom: 0rem;               
+  border: 2px solid var(--navcolor);
+  border: none;
+  border-top: 1px solid var(--navcolor);
+}
+textarea{
+  border-width: .1rem;
+  border-color:#DBD8D7;
+  height: 7rem;
+  background: var(--backc);
+  font-family: 'Inter', sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: left;
+  font-weight: 700;
+  color: var(--bkcolor);
+}
+form> input[type="submit"]{
+  margin-top: 2rem;
+  margin-left: 4.5rem;
+  border: none;
+  background: var(--maincolor);
+  color: var(--txtcolor);
+  font-family: 'Inter', sans-serif;
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  text-align: center;
+  height: 3rem;
+  width: 10rem;
+}
+.footericon>ul{
+  list-style-type: none;
+  display:flex;
+  flex-direction: row;
+  justify-content:space-around;
+  width: 10rem;
+  padding-top: 2rem;
+  padding-bottom: .5rem;
+  padding-left: .5rem;
+}
+.line1{
+  width: 6rem;
+  border: 3px solid var(--line);
+  border-radius: 10px;
+  padding-bottom: 0rem;
 }
