@@ -13,6 +13,8 @@
   --line: #212121;
   --colorb: #ffffff3d;
   --backc: #fbf8f7;
+  --btncol: #f4f1f0;
+  --btncol2: #fff5e1;
 }
 
 body {
@@ -361,16 +363,18 @@ nav > a {
   background-position: right 20rem;
 }
 
-.line,
-.line1 {
-  border: 1px solid #dbd8d7;
+.line {
+  height: 1px;
+  background: #dbd8d7;
+  border: none;
   margin: 1rem 0;
 }
 
 #about > .line {
-  background: var(--line);
-  border: 1px solid var(--txtcolor);
-  width: 19.2rem;
+  background: var(--backc);
+  border: none;
+  height: 2px;
+  width: 20.2rem;
   margin: 13rem 0 9rem 0;
 }
 
@@ -406,7 +410,8 @@ input[type="email"] {
   text-align: left;
   color: #ff6b00;
   border: none;
-  padding: 0 1rem;
+  border-bottom: 1px solid #dbd8d7;
+  padding: 1rem;
 }
 
 .footericon {
@@ -424,17 +429,17 @@ input[type="email"] {
 }
 
 textarea {
-  border-width: 0.1rem;
-  border-color: #dbd8d7;
+  border: none;
   height: 7rem;
-  background: var(--backc);
+  background: var(--txtcolor);
   font-family: 'Inter', sans-serif;
   font-size: 15px;
   line-height: 24px;
   letter-spacing: 0;
   text-align: left;
-  font-weight: 700;
+  font-weight: 400;
   color: var(--bkcolor);
+  margin-top: 1.5rem;
 }
 
 form > input[type="submit"] {
@@ -453,9 +458,35 @@ form > input[type="submit"] {
   width: 10rem;
 }
 
+input[type="submit"]:enabled {
+  background: var(--maincolor);
+  border: none;
+  color: var(--backc);
+}
+
+input[type="submit"]:hover {
+  background: var(--btncol2);
+  border: 1px solid var(--maincolor);
+  color: var(--maincolor);
+}
+
+input[type="submit"]:active {
+  background: var(--maincolor);
+  border: none;
+  color: var(--backc);
+}
+
+input[type="submit"]:disabled {
+  background: var(--btncol);
+  border: none;
+  color: var(--line);
+}
+
 .line1 {
   width: 6rem;
-  border: 3px solid var(--line);
+  height: 3px;
+  border: none;
   border-radius: 10px;
   padding-bottom: 0;
+  background: var(--line);
 }
