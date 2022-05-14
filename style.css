@@ -578,9 +578,6 @@ form#f2 {
   .imgsection > :nth-child(1) {
     display: none;
   }
-
-
-
   /* end of the display none desktop */
   nav {
     display: flex;
