@@ -578,7 +578,7 @@ form#f2 {
   .imgsection > :nth-child(1) {
     display: none;
   }
-  
+
   nav {
     display: flex;
     flex-direction: row;
