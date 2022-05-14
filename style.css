@@ -543,11 +543,6 @@ form#f2 {
     padding-left: 4.5rem;
   }
 
-  #about > h2,
-  p {
-    padding-left: -0.5rem;
-  }
-
   #contact > h2 {
     font-size: 40px;
     font-weight: 700;
@@ -643,6 +638,7 @@ form#f2 {
     position: relative;
     float: left;
     top: -14rem;
+    gap: 0.8rem;
     flex-direction: column;
   }
 
@@ -650,12 +646,15 @@ form#f2 {
     display: flex;
     flex-direction: row;
     align-items: center;
+    margin: 0%;
+    padding: 0%;
   }
 
   .line5 {
     height: 0.1em;
     background: #1c1a19;
-    width: 50rem;
+    width: 42rem;
+    margin-left: -2rem;
   }
 
   .imgsection {
@@ -829,6 +828,7 @@ form#f2 {
 
   #about > p {
     width: 30rem;
+    margin-left: 4.5rem;
   }
 
   #work > .cartt2 > .cart > p {
@@ -894,8 +894,8 @@ form#f2 {
     background: var(--backc);
     border: none;
     height: 2px;
-    width: 70.2rem;
-    margin: 18rem 5rem 9rem 5rem;
+    width: 73.2rem;
+    margin: 31rem 1rem 5rem 4.5rem;
   }
 
   .listing {
@@ -903,6 +903,7 @@ form#f2 {
     justify-content: center;
     align-items: center;
     flex-direction: row;
+    margin-left: -7rem;
   }
 
   #contact {
