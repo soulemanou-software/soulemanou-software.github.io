@@ -836,7 +836,7 @@ nav > ul>li> a {
   display:none;
 }
 #about>h2 , p {
-  padding-left: 4.5rem;
+  padding-left: -0.5rem;
 }
 #about> p {
   width: 30rem;
