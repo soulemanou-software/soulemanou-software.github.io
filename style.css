@@ -167,14 +167,17 @@ nav > a {
 .first-box {
   margin-right: 1.8rem;
 }
-
-#work > .first-box > img {
+.ttwork{
+  padding: 0%;
+  margin: 0%;
+}
+#work > .first-box > .imgsection> img {
   width: 19.2rem;
   padding-bottom: 2rem;
   padding-right: 2rem;
 }
 
-#about > ul > li > h3 {
+#about > .listing> ul > li > h3 {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -186,7 +189,7 @@ nav > a {
   text-align: center;
 }
 
-#about > ul > li > a {
+#about >.listing>  ul > li > a {
   text-decoration: none;
   color: var(--txtcolor);
   font-size: 22px;
@@ -196,7 +199,7 @@ nav > a {
   text-align: center;
 }
 
-#work > .first-box > h3 {
+#work > .first-box > .imgsection> .ttwork>  h3 {
   font-family: 'Crete Round', serif;
   font-weight: 300;
   font-size: 2rem;
@@ -211,7 +214,7 @@ nav > a {
   text-align: left;
 }
 
-#work > .first-box > p {
+#work > .first-box >.imgsection> .ttwork>  p {
   font-family: 'Inter', sans-serif;
   padding-top: 0.5rem;
   margin-right: 1.98rem;
@@ -226,7 +229,7 @@ nav > a {
   flex-grow: 0;
 }
 
-#about > ul {
+#about > .listing> ul {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -236,14 +239,14 @@ nav > a {
   line-height: 3rem;
 }
 
-#work > .first-box > ul {
+#work > .first-box > .imgsection> .ttwork> ul {
   list-style-type: none;
   display: flex;
   flex-direction: row;
   padding: 1rem 0;
 }
 
-#work > .first-box > ul > li {
+#work > .first-box > .imgsection> .ttwork> ul > li {
   font-family: 'Inter', sans-serif;
   border: 1px solid var(--line);
   padding: 0.5rem;
@@ -265,7 +268,7 @@ nav > a {
   border: none;
 }
 
-#work > .first-box > button {
+#work > .first-box > .imgsection> .ttwork> button {
   background: var(--maincolor);
   border: none;
   width: 7rem;
@@ -275,9 +278,12 @@ nav > a {
   font-weight: 400;
   font-size: 1rem;
 }
-
+.imgsection{
+  padding: 0%;
+  margin: 0%;
+}
 /* work carts selector */
-#work > .cart {
+#work > .carttt> .cart {
   display: flexbox;
   flex-direction: column;
   margin-top: 2rem;
@@ -288,12 +294,15 @@ nav > a {
   left: 0;
   top: 0;
   border: none;
-  border-radius: 0;
-  background: url(Resources/Images/Img-Placeholder.png);
+  border-radius: 0px;
+background: linear-gradient(179.35deg, rgba(38, 38, 38, 0) 0.85%, rgba(38, 38, 38, 0.9) 84%), url(Resources/Images/Mask-Group.png);
+background-position: center center;
+  background-repeat:no-repeat;
+
   color: var(--txtcolor);
 }
 
-#work > .cart > h2 {
+#work > .carttt> .cart > h2 {
   padding: 0.5rem 1rem;
   font-weight: 500;
   font-family: 'Crete Round', serif;
@@ -301,11 +310,11 @@ nav > a {
   line-height: 40px;
 }
 
-#work > .cart > h1 > span {
+#work > .carttt> .cart > h1 > span {
   display: block;
 }
 
-#work > .cart > p {
+#work > .carttt> .cart > p {
   font-family: 'Inter', sans-serif;
   font-size: 16px;
   font-weight: 400;
@@ -315,14 +324,14 @@ nav > a {
   text-align: left;
 }
 
-#work > .cart > ul {
+#work > .carttt> .cart > ul {
   list-style-type: none;
   display: flex;
   flex-direction: row;
   padding: 0 1rem;
 }
 
-#work > .cart > ul > li {
+#work > .carttt> .cart > ul > li {
   display: flex;
   font-family: 'Inter', sans-serif;
   justify-content: center;
@@ -334,7 +343,7 @@ nav > a {
   background-color: var(--colorb);
 }
 
-#work .cart > button {
+#work .carttt> .cart > button {
   height: 3rem;
   margin-top: 1rem;
   margin-bottom: 0;
@@ -498,6 +507,15 @@ input[type="submit"]:disabled {
 nav> :nth-child(3){
   display: none;
 }
+.imgsection> :nth-child(2){
+  display: none;
+}
+.cartt2{
+  display: none;
+}
+form#f2{
+  display:none;
+}
 @media only screen and (min-width: 790px){
   body{
    padding: 0;
@@ -510,6 +528,15 @@ nav> :nth-child(2){
 }
 #work > .first-box> .headtext>  h2{
   border: none;
+  }
+  .imgsection> :nth-child(2){
+    display: flex;
+
+  }
+  .imgsection> :nth-child(1){
+    display: none;
+  }
+ .cartt2> #c1> h2, p, ul>li{
   }
 /* end of the display none desktop */
 nav {
@@ -541,6 +568,10 @@ nav > ul>li> a {
   padding-left: 2rem;
 
 }
+.carttt{
+  padding: 0px;
+  margin: 0px;
+}
 #headline{
   background-image: url(Resources/Images/Illustration-header.png);
   background-position: top right;
@@ -558,7 +589,6 @@ nav > ul>li> a {
   font-size: 1rem;
   line-height: 24px;
   width: 34em;
-  border: 1px solid red;
   flex-grow: 0;
   margin: 0 0;
   padding-left: 4.5rem;
@@ -566,7 +596,7 @@ nav > ul>li> a {
 #headline >ul{
   position: relative;
   float: left;
-  top:-15rem;
+  top:-14rem;
   flex-direction: column;
 }
 #headline > h2 {
@@ -578,13 +608,304 @@ nav > ul>li> a {
   align-items: center;
 }
 
-#work > .first-box> h2{
+#work > .first-box> .headtext> h2{
   padding-left: 4.5rem;
 }
 .line5{
 
  height: 0.1em;
  background: #1c1a19;
- width: 55rem;
+ width: 50rem;
+}
+.imgsection{
+  display:flex;
+  margin:0%;
+  padding-left: 4.5rem;
+  width:auto;
+  height: auto;
+}
+.imgsection> p{
+  max-width: 22rem;
+}
+.imgsection> :nth-child(2){
+  min-width: 42.5em;
+  height: 26rem;
+}
+.ttwork{
+  padding:0%;
+  margin:0%;
+}
+#work > .cartt2> #c1{
+  display: flexbox;
+  flex-direction: column;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  padding-top: 2.5rem;
+  height: 20rem;
+  width: 19.5rem;
+  left: 0;
+  top: 0;
+  border: none;
+  border-radius: 0px;
+  background-position: center center;
+  background-repeat:no-repeat;
+  color: var(--txtcolor);
+}
+#work > .cartt2>#c2{
+  display: flexbox;
+  flex-direction: column;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  padding-top: 2.5rem;
+  height: 20rem;
+  width: 19.5rem;
+  left: 0;
+  top: 0;
+  border: none;
+  border-radius: 0px;
+  background-position: center center;
+  background-repeat:no-repeat;
+  color: var(--txtcolor);
+}
+#work > .cartt2> #c3{
+  display: flexbox;
+  flex-direction: column;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  padding-top: 2.5rem;
+  height: 20rem;
+  width: 19.5rem;
+  left: 0;
+  top: 0;
+  border: none;
+  border-radius: 0px;
+  background-position: center center;
+  background-repeat:no-repeat;
+  color: var(--txtcolor);
+}
+#work > .cartt2> #c4{
+  display: flexbox;
+  flex-direction: column;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  padding-top: 2.5rem;
+  height: 20rem;
+  width: 19.5rem;
+  left: 0;
+  top: 0;
+  border: none;
+  border-radius: 0px;
+  background-position: center center;
+  background-repeat:no-repeat;
+  color: var(--txtcolor);
+}
+#work > .cartt2>#c5{
+  display: flexbox;
+  flex-direction: column;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  padding-top: 2.5rem;
+  height: 20rem;
+  width: 19.5rem;
+  left: 0;
+  top: 0;
+  border: none;
+  border-radius: 0px;
+  background-position: center center;
+  background-repeat:no-repeat;
+  color: var(--txtcolor);
+}
+#work > .cartt2> #c6{
+  display: flexbox;
+  flex-direction: column;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  padding-top: 2.5rem;
+  height: 20rem;
+  width: 19.5rem;
+  left: 0;
+  top: 0;
+  border: none;
+  border-radius: 0px;
+  background-position: center center;
+  background-repeat:no-repeat;
+  color: var(--txtcolor);
+}
+#work > .cartt2> #c1{
+  background-image: url(Resources/Images/Mask-Group.png);
+}
+#work > .cartt2> #c1> button{
+  margin-top: 17rem;
+}
+#work > .cartt2> #c2{
+  background-image: url(Resources/Images/Mask-Group1.png);
+}
+
+#work > .cartt2> #c3{
+  background-image: url(Resources/Images/Mask-Group2.png);
+}
+#work > .cartt2> #c4{
+  background: linear-gradient(180.45deg, rgba(38, 38, 38, 0) 0.75%, rgba(38, 38, 38, 0.9) 84.18%), url(Resources/Images/Mask-Group.png);
+}
+#work > .cartt2> #c5{
+  background-image: url(Resources/Images/Mask-Group1.png);
+}
+#work > .cartt2> #c6{
+  background-image: url(Resources/Images/Mask-Group2.png);
+  padding-bottom: 0%;
+}
+#work > .cartt2> #c3> h2{
+  padding: 3.5rem 1rem;
+}
+#work > .cartt2> #c6> h2{
+  padding: 3.5rem 1rem;
+}
+#work > .cartt2> .cart > h2 {
+  padding: 2.3rem 1rem;
+  font-weight: 500;
+  font-family: 'Crete Round', serif;
+  font-size: 32px;
+  line-height: 40px;
+}
+
+#work > .cartt2> .cart > h1 > span {
+  display: block;
+}
+
+#work > .cartt2> .cart > p {
+  font-family: 'Inter', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  padding: 0 1rem;
+  letter-spacing: 0;
+  text-align: left;
+}
+
+#work > .cartt2> .cart > ul {
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  padding: 0 1rem;
+}
+
+#work > .cartt2> .cart > ul > li {
+  display: flex;
+  font-family: 'Inter', sans-serif;
+  justify-content: center;
+  align-items: center;
+  width: auto;
+  height: 2rem;
+  padding: 0.5rem 1rem;
+  margin: 0.5rem 0.5rem 0.5rem 0;
+  background-color: var(--colorb);
+}
+
+#work .cartt2> .cart > button {
+  height: 3rem;
+  margin-top: 1rem;
+  margin-bottom: 0;
+  margin-left: 0;
+  margin-right: 0;
+  width: 19.5rem;
+  border-radius: 0%;
+  border: none;
+  font-family: 'Inter', sans-serif;
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  text-align: center;
+  color: var(--txtcolor);
+  background-color: var(--maincolor);
+}
+.cartt2{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr ;
+  grid-template-rows: auto;
+  column-gap:2.5rem;
+  row-gap: .5rem;
+  padding:0%;
+  margin-left: -6%;
+}
+#work{
+  width: auto;
+  place-items:  center;
+}
+.carttt{
+  display:none;
+}
+#about>h2 , p {
+  padding-left: 4.5rem;
+}
+#about> p {
+  width: 30rem;
+}
+#about>button{
+  margin-left: 4.5rem;
+}
+#about{
+  background-image: url(Resources/Images/illustration-aboutme.png);
+  background-repeat: no-repeat;
+  background-size:30rem;
+  background-position: 20em right;
+  background-position-y: 14ch;
+}
+
+#about > .line {
+    background: var(--backc);
+    border: none;
+    height: 2px;
+    width: 70.2rem;
+    margin: 18rem 5rem 9rem 5rem;
+}
+.listing{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+#about > .listing> ul{
+  display: block;
+flex-direction: column;
+margin: 5rem 10rem;
+font-size: larger;
+}
+#contact{
+  flex-direction: row;
+}
+#contact> h2{
+font-size: 40px;
+font-weight: 700;
+line-height: 52px;
+letter-spacing: 0em;
+text-align: left;
+height: auto;
+width: 28rem;
+margin-left: -9rem;
+padding: 2rem;
+}
+form#f1{
+  display:none;
+}
+form#f2{
+  display:flex;
+  width: 37rem;
+}
+form#f2 input[type="text"]{
+  width: 17em;
+}
+form#f2 input[type="email"]{
+  width: 34rem;
+}
+form#f2 input[type="submit"]{
+  margin-left: -.1rem;
+}
+form#f2 textarea{
+  background: #FBF8F7;
+
+}
+form#f2 span{
+
 }
 }
