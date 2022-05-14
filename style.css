@@ -899,7 +899,7 @@ form#f2 {
     border: none;
     height: 2px;
     width: 73.2rem;
-    margin: 31rem 1rem 5rem 4.5rem;
+    margin: 31rem 1rem 5rem 0;
   }
 
   .listing {
