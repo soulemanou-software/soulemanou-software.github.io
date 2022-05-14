@@ -543,6 +543,10 @@ form#f2 {
     padding-left: 4.5rem;
   }
 
+  #about > h2 {
+    padding-left: 4.5rem;
+  }
+
   #contact > h2 {
     font-size: 40px;
     font-weight: 700;
