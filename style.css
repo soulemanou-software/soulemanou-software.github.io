@@ -149,8 +149,12 @@ nav > a {
   top: 0;
   color: var(--txtcolor2);
 }
-
-#work > .first-box > h2 {
+.headtext{
+  margin: 0px;
+  padding: 0px;
+  border: none;
+}
+#work > .first-box > .headtext> h2 {
   margin: 5rem 2rem 5rem 0;
   font-size: 2.3rem;
   font-family: 'Crete Round', serif;
@@ -489,4 +493,98 @@ input[type="submit"]:disabled {
   border-radius: 10px;
   padding-bottom: 0;
   background: var(--line);
+}
+/* all the display none for mobile*/
+nav> :nth-child(3){
+  display: none;
+}
+@media only screen and (min-width: 790px){
+  body{
+   padding: 0;
+   margin: 0;
+  }
+/* The navigation selector */
+/* all the display none for desktop */
+nav> :nth-child(2){
+  display:none;
+}
+#work > .first-box> .headtext>  h2{
+  border: none;
+  }
+/* end of the display none desktop */
+nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: auto;
+  padding: 1.8rem 6rem 1rem 6rem;
+  background: var(--navcolor);
+}
+nav> :nth-child(3){
+  display: flex;
+}
+nav > ul> li{
+  list-style-type: none;
+}
+nav > ul>li> a {
+  list-style-type: none;
+  text-decoration: none;
+  color: var(--txtcolor);
+  font-family: 'Inter', sans-serif;
+  font-size: 1rem;
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 20px;
+  letter-spacing: 0em;
+  text-align: center;
+  padding-left: 2rem;
+
+}
+#headline{
+  background-image: url(Resources/Images/Illustration-header.png);
+  background-position: top right;
+  background-size: 30rem;
+  height: 30rem;
+  padding-left: 1rem;
+}
+
+#headline > p {
+  color: var(--txtcolor);
+  padding-top: 1rem;
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 1rem;
+  line-height: 24px;
+  width: 34em;
+  border: 1px solid red;
+  flex-grow: 0;
+  margin: 0 0;
+  padding-left: 4.5rem;
+}
+#headline >ul{
+  position: relative;
+  float: left;
+  top:-15rem;
+  flex-direction: column;
+}
+#headline > h2 {
+  padding-left: 4.5rem;
+}
+.headtext{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+#work > .first-box> h2{
+  padding-left: 4.5rem;
+}
+.line5{
+
+ height: 0.1em;
+ background: #1c1a19;
+ width: 55rem;
+}
 }
