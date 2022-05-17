@@ -46,7 +46,7 @@ nav > a {
 #headline {
   display: flex;
   flex-direction: column;
-  height: 25.2rem;
+  height: 35.2rem;
   background: var(--bkcolor);
   padding: 6rem 2rem 2rem 2rem;
   background-image: url(Resources/Images/illustration-header-mobile.png);
