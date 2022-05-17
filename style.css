@@ -174,11 +174,19 @@ nav > a {
   padding: 0%;
   margin: 0%;
 }
+.carttt{
+  padding:0;
+  margin: 0;
+  width: 88%;
+}
 
-#work > .first-box > .imgsection > img {
-  width: 19.2rem;
-  padding-bottom: 2rem;
-  padding-right: 2rem;
+#work > .first-box > .imgsection:nth-child(1){
+    display: flex;
+    width: 19.2em;
+    padding-bottom: 2rem;
+    padding-right: 2rem;
+    justify-content: center;
+    border: 2px solid red;
 }
 
 #about > .listing > ul > li > h3 {
@@ -570,7 +578,7 @@ form#f2 {
 
   .imgsection > :nth-child(2) {
     display: flex;
-    min-width: 42.5em;
+    min-width: 37.5em;
     height: 26rem;
   }
 
@@ -671,7 +679,7 @@ form#f2 {
 
   .ttwork {
     padding: 0%;
-    margin: 0%;
+    margin-left: 4%;
   }
 
   #work > .cartt2 > #c1 {
