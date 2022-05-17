@@ -20,7 +20,7 @@
 
 ## Live Demo
 
-[Live Demo Link](http://127.0.0.1:5500/index.html)
+[Live Demo Link](https://soulemanou-software.github.io/)
 
 
 ## Getting Started
@@ -67,8 +67,8 @@ To get a local copy up and running follow these simple example steps.
 ## Authors
 👤 **Author1**
  - SOULEMANOU KUNCHIEFUH BABANOU**
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
+- GitHub: [@githubhandle](https://github.com/soulemanou-software)
+- Twitter: [@twitterhandle](https://twitter.com/fastdevz1)
 - LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
     
     
