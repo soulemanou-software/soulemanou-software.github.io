@@ -526,10 +526,14 @@ form#f2 {
   display: none;
 }
 
-@media only screen and (min-width: 790px) {
+@media only screen and (min-width: 768px) {
   body {
     padding: 0;
     margin: 0;
+
+  }
+  body::-webkit-scrollbar {
+    display: none;
   }
 
   /* The navigation selector */
@@ -616,7 +620,7 @@ form#f2 {
     background-image: url(Resources/Images/Illustration-header.png);
     background-position: top right;
     background-size: 30rem;
-    height: 30rem;
+    height: 55.2rem;
     padding-left: 1rem;
   }
 
@@ -848,8 +852,9 @@ form#f2 {
   #about > .listing > ul {
     display: block;
     flex-direction: column;
-    margin: 5rem 10rem;
+    margin: 0rem 0% 0rem 0rem ;
     font-size: larger;
+    padding: 5rem 20% 0rem 0rem; 
   }
 
   #work > .cartt2 > .cart > ul {
@@ -857,6 +862,10 @@ form#f2 {
     display: flex;
     flex-direction: row;
     padding: 0 1rem;
+  }
+  #about > .listing > ul> ul> ul{
+    padding-right: 20%;
+    background-color: #ff6b00;
   }
 
   #work > .cartt2 > .cart > ul > li {
@@ -895,6 +904,7 @@ form#f2 {
   }
 
   #about > .line {
+    display: none;
     background: var(--backc);
     border: none;
     height: 2px;
@@ -905,9 +915,11 @@ form#f2 {
   .listing {
     display: flex;
     justify-content: center;
-    align-items: center;
     flex-direction: row;
-    margin-left: -7rem;
+    border-top: 3px solid #fff;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 20rem; 
   }
 
   #contact {
