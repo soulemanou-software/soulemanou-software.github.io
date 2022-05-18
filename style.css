@@ -117,12 +117,16 @@ nav > a {
 /* work selector */
 #work {
   display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: auto;
+  justify-content: center;
+  align-content: center;
+  gap: 4px;
+  grid-auto-flow: row;
   height: auto;
   background: var(--txtcolor);
   color: var(--txtcolor2);
-  padding: 0 2rem 3rem 2rem;
+  padding-left: 3rem;
+  padding-right: .5rem;
+  border: 3px solid red;
 }
 
 #about > h2 {
@@ -199,6 +203,11 @@ nav > a {
   line-height: 44px;
   letter-spacing: 0;
   text-align: center;
+}
+.listing{
+  border-top: 2px solid var(--txtcolor) ;
+  margin-top: 15rem;
+  padding-top: 8rem;
 }
 
 #about > .listing > ul > li > a {
@@ -389,13 +398,6 @@ nav > a {
   background-position: right 20rem;
 }
 
-.line {
-  height: 1px;
-  background: #dbd8d7;
-  border: none;
-  margin: 1rem 0;
-}
-
 #about > .line {
   background: var(--backc);
   border: none;
@@ -414,6 +416,7 @@ nav > a {
   margin-top: 1rem;
   display: flex;
   justify-content: center;
+  align-items: center;
   flex-direction: column;
   padding: 4rem 2rem;
 }
@@ -438,6 +441,7 @@ input[type="email"] {
   border: none;
   border-bottom: 1px solid #dbd8d7;
   padding: 1rem;
+  margin-left: -2rem;
 }
 
 .footericon {
@@ -465,7 +469,8 @@ textarea {
   text-align: left;
   font-weight: 400;
   color: var(--bkcolor);
-  margin-top: 1.5rem;
+  padding-top: 1.5rem;
+  margin-left: -2rem;
 }
 
 form > input[type="submit"] {
@@ -484,28 +489,14 @@ form > input[type="submit"] {
   width: 10rem;
 }
 
-input[type="submit"]:enabled {
-  background: var(--maincolor);
-  border: none;
-  color: var(--backc);
-}
 
-input[type="submit"]:hover {
+#contact > form> input[type="submit"]{
+  margin-left: 2rem;
+}
+#contact > form> input[type="submit"]:hover {
   background: var(--btncol2);
   border: 1px solid var(--maincolor);
   color: var(--maincolor);
-}
-
-input[type="submit"]:active {
-  background: var(--maincolor);
-  border: none;
-  color: var(--backc);
-}
-
-input[type="submit"]:disabled {
-  background: var(--btncol);
-  border: none;
-  color: var(--line);
 }
 
 .line1 {
@@ -534,7 +525,7 @@ form#f2 {
   display: none;
 }
 
-@media only screen and (min-width: 790px) {
+@media only screen and (min-width: 768px) {
   body {
     padding: 0;
     margin: 0;
@@ -719,7 +710,7 @@ form#f2 {
   }
 
   #work > .cartt2 > #c3 {
-    display: flexbox;
+    display: flex;
     flex-direction: column;
     margin-top: 2rem;
     margin-bottom: 1rem;
@@ -737,7 +728,7 @@ form#f2 {
   }
 
   #work > .cartt2 > #c4 {
-    display: flexbox;
+    display: flex;
     flex-direction: column;
     margin-top: 2rem;
     margin-bottom: 1rem;
@@ -755,7 +746,7 @@ form#f2 {
   }
 
   #work > .cartt2 > #c5 {
-    display: flexbox;
+    display: flex;
     flex-direction: column;
     margin-top: 2rem;
     margin-bottom: 1rem;
@@ -781,7 +772,7 @@ form#f2 {
   }
 
   #work > .cartt2 > #c6 {
-    display: flexbox;
+    display: flex;
     flex-direction: column;
     margin-top: 2rem;
     margin-bottom: 1rem;
