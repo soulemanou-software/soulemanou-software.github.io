@@ -119,13 +119,10 @@ nav > a {
   display: grid;
   justify-content: center;
   align-content: center;
-  gap: 4px;
   grid-auto-flow: row;
   height: auto;
   background: var(--txtcolor);
   color: var(--txtcolor2);
-  padding-left: 3rem;
-  padding-right: .5rem;
 }
 
 #about > h2 {
@@ -159,37 +156,52 @@ nav > a {
   border: none;
 }
 
-#work > .first-box > .headtext > h2 {
-  margin: 5rem 2rem 5rem 0;
-  font-size: 2.3rem;
+#work > .first-box > .headtext > h2 { 
+  font-size: 2.2rem;
   font-family: 'Crete Round', serif;
   font-weight: 500;
   justify-items: center;
-  padding: 2rem 1rem 2rem 0;
+  padding: 5rem 1rem 2rem 0;
   border-bottom: 1.5px solid var(--line);
-}
-
-.first-box {
-  margin-right: 1.8rem;
+  width: 18rem ;
 }
 
 .ttwork {
   padding: 0%;
   margin: 0%;
 }
-.carttt{
-  padding:0;
+
+.carttt {
+  justify-self: center;
+  padding: 0;
   margin: 0;
-  width: 88%;
+  width: auto;
+  border: 2px solid green;
+}
+div.first-box{
+  justify-content:center;
+  align-items: center;
+  padding: 0px;
+  border: 1px solid red;
+  width:22rem;
+  margin-left: 0%;
+}
+div.imgsection{
+  padding: 0px;
+  margin: 0px;
+  width: 87%;
+}
+#work-images{
+  padding-top: 3rem;
+  position: relative;
+  max-width: 19.1rem;
 }
 
-#work > .first-box > .imgsection:nth-child(1){
-    display: flex;
-    width: 19.2em;
-    padding-bottom: 2rem;
-    padding-right: 2rem;
-    justify-content: center;
-    border: 2px solid red;
+#work > .first-box > .imgsection:nth-child() {
+  display: flex;
+  padding-bottom: 2rem;
+  padding-right: 2rem;
+  justify-content: center;
 }
 
 #about > .listing > ul > li > h3 {
@@ -203,8 +215,9 @@ nav > a {
   letter-spacing: 0;
   text-align: center;
 }
-.listing{
-  border-top: 2px solid var(--txtcolor) ;
+
+.listing {
+  border-top: 2px solid var(--txtcolor);
   margin-top: 15rem;
   padding-top: 8rem;
 }
@@ -347,11 +360,6 @@ nav > a {
   font-size: 1rem;
 }
 
-.imgsection {
-  padding: 0%;
-  margin: 0%;
-}
-
 /* work carts selector */
 #work > .carttt > .cart {
   display: flexbox;
@@ -385,11 +393,10 @@ nav > a {
 
 /* about selector */
 #about {
-  margin-top: 3rem;
   display: flex;
   justify-content: center;
   flex-direction: column;
-  padding: 6rem 2rem;
+  padding: 10rem 2rem 6rem 2rem;
   background: var(--bkcolor);
   color: var(--txtcolor);
   background-image: url(Resources/Images/Frame.png);
@@ -488,11 +495,11 @@ form > input[type="submit"] {
   width: 10rem;
 }
 
-
-#contact > form> input[type="submit"]{
+#contact > form > input[type="submit"] {
   margin-left: 2rem;
 }
-#contact > form> input[type="submit"]:hover {
+
+#contact > form > input[type="submit"]:hover {
   background: var(--btncol2);
   border: 1px solid var(--maincolor);
   color: var(--maincolor);
