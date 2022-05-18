@@ -126,7 +126,6 @@ nav > a {
   color: var(--txtcolor2);
   padding-left: 3rem;
   padding-right: .5rem;
-  border: 3px solid red;
 }
 
 #about > h2 {
