@@ -563,7 +563,25 @@ form#f2 {
   #about > h2 {
     padding-left: 4.5rem;
   }
-
+  div.first-box{
+    display: block;
+  }
+  #work > .first-box > .headtext > h2 { 
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    width:auto;
+    font-size: 2.2rem;
+    font-family: 'Crete Round', serif;
+    font-weight: 500;
+    justify-items: center;
+    padding: 5rem 0rem 5rem 0rem;
+    border-bottom: 1.5px solid var(--line);
+  }
+  #work > .first-box > .headtext > h2> div{
+    margin-left: 1rem;
+    width: 39rem;
+  }
   #contact > h2 {
     font-size: 40px;
     font-weight: 700;
@@ -578,7 +596,6 @@ form#f2 {
 
   #work > .first-box > .headtext > h2 {
     border: none;
-    padding-left: 4.5rem;
   }
 
   nav > :nth-child(3) {
@@ -601,7 +618,7 @@ form#f2 {
     justify-content: space-between;
     align-items: center;
     width: auto;
-    padding: 1.8rem 6rem 1rem 6rem;
+    padding: 1rem 6rem 1rem 6rem;
     background: var(--navcolor);
   }
 
@@ -630,10 +647,11 @@ form#f2 {
   }
 
   #headline {
+    justify-content: center;
     background-image: url(Resources/Images/Illustration-header.png);
     background-position: top right;
     background-size: 30rem;
-    height: 30rem;
+    height: 35rem;
     padding-left: 1rem;
   }
 
@@ -832,9 +850,13 @@ form#f2 {
   }
 
   #work > .cartt2 > #c1 > button {
-    margin-top: 17rem;
+    margin-top: 17.1rem;
   }
-
+  #work > .cartt2 > #c1 > button:hover {
+    background: var(--btncol2);
+    border: 1px solid var(--maincolor);
+    color: var(--maincolor);
+}
   #work > .cartt2 > #c3 > h2 {
     padding: 3.5rem 1rem;
   }
@@ -851,7 +873,9 @@ form#f2 {
     width: 30rem;
     margin-left: 4.5rem;
   }
-
+  #work > .first-box > .imgsection > .ttwork > p{
+    width:100%;
+  }
   #work > .cartt2 > .cart > p {
     font-family: 'Inter', sans-serif;
     font-size: 16px;
@@ -876,6 +900,9 @@ form#f2 {
     padding: 0 1rem;
   }
 
+  div.first-box {
+    min-width:100%;
+  }
   #work > .cartt2 > .cart > ul > li {
     display: flex;
     font-family: 'Inter', sans-serif;
@@ -892,10 +919,10 @@ form#f2 {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: auto;
+    justify-content: center;
+    align-items: center;
     column-gap: 2.5rem;
-    row-gap: 0.5rem;
     padding: 0%;
-    margin-left: -6%;
   }
 
   #work {
@@ -924,7 +951,10 @@ form#f2 {
     justify-content: center;
     align-items: center;
     flex-direction: row;
-    margin-left: -7rem;
+    width:80rem;
+    margin-top: 5rem;
+    margin-left: 0%;
+
   }
 
   #contact {
