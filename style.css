@@ -46,7 +46,7 @@ nav > a {
 #headline {
   display: flex;
   flex-direction: column;
-  height: 45.2rem;
+  height: 30rem;
   background: var(--bkcolor);
   padding: 6rem 2rem 2rem 2rem;
   background-image: url(Resources/Images/illustration-header-mobile.png);
@@ -119,14 +119,10 @@ nav > a {
   display: grid;
   justify-content: center;
   align-content: center;
-  gap: 4px;
   grid-auto-flow: row;
   height: auto;
   background: var(--txtcolor);
   color: var(--txtcolor2);
-  padding-left: 3rem;
-  padding-right: .5rem;
-  border: 3px solid red;
 }
 
 #about > h2 {
@@ -146,9 +142,9 @@ nav > a {
   justify-content: center;
   align-items: center;
   text-align: center;
-  height: 216px;
-  padding: 0;
-  width: 19.3rem;
+  height: 10rem;
+  padding-top: 4rem;
+  width: 21.6rem;
   left: 0;
   top: 0;
   color: var(--txtcolor2);
@@ -161,36 +157,55 @@ nav > a {
 }
 
 #work > .first-box > .headtext > h2 {
-  margin: 5rem 2rem 5rem 0;
-  font-size: 2.3rem;
+  font-size: 2.2rem;
   font-family: 'Crete Round', serif;
   font-weight: 500;
   justify-items: center;
-  padding: 2rem 1rem 2rem 0;
+  padding: 5rem 1rem 2rem 0;
   border-bottom: 1.5px solid var(--line);
-}
-
-.first-box {
-  margin-right: 1.8rem;
+  width: 18rem;
 }
 
 .ttwork {
   padding: 0%;
   margin: 0%;
 }
-.carttt{
-  padding:0;
+
+.carttt {
+  justify-self: center;
+  padding: 0;
   margin: 0;
-  width: 88%;
+  width: auto;
 }
 
-#work > .first-box > .imgsection:nth-child(1){
-    display: flex;
-    width: 19.2em;
-    padding-bottom: 2rem;
-    padding-right: 2rem;
-    justify-content: center;
-    border: 2px solid red;
+div.first-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  width: 22rem;
+  margin-left: 0%;
+  margin-bottom: 2rem;
+}
+
+div.imgsection {
+  padding: 0;
+  margin: 0;
+  width: 87%;
+}
+
+#work-images {
+  padding-top: 3rem;
+  position: relative;
+  max-width: 19.1rem;
+}
+
+#work > .first-box > .imgsection:nth-child() {
+  display: flex;
+  padding-bottom: 2rem;
+  padding-right: 2rem;
+  justify-content: center;
 }
 
 #about > .listing > ul > li > h3 {
@@ -204,9 +219,10 @@ nav > a {
   letter-spacing: 0;
   text-align: center;
 }
-.listing{
-  border-top: 2px solid var(--txtcolor) ;
-  margin-top: 15rem;
+
+.listing {
+  border-top: 2px solid var(--txtcolor);
+  margin-top: 11rem;
   padding-top: 8rem;
 }
 
@@ -268,6 +284,7 @@ nav > a {
   list-style-type: none;
   font-family: 'Inter', sans-serif;
   line-height: 3rem;
+  margin-bottom: 3rem;
 }
 
 #work > .carttt > .cart > ul {
@@ -318,6 +335,12 @@ nav > a {
   border: none;
 }
 
+#about > button:hover {
+  background: var(--btncol2);
+  border: 1px solid var(--maincolor);
+  color: var(--maincolor);
+}
+
 #work .carttt > .cart > button {
   height: 3rem;
   margin-top: 1rem;
@@ -337,6 +360,12 @@ nav > a {
   background-color: var(--maincolor);
 }
 
+#work .carttt > .cart > button:hover {
+  background: var(--btncol2);
+  border: 1px solid var(--maincolor);
+  color: var(--maincolor);
+}
+
 #work > .first-box > .imgsection > .ttwork > button {
   background: var(--maincolor);
   border: none;
@@ -348,17 +377,17 @@ nav > a {
   font-size: 1rem;
 }
 
-.imgsection {
-  padding: 0%;
-  margin: 0%;
+#work > .first-box > .imgsection > .ttwork > button:hover {
+  background: var(--btncol2);
+  border: 1px solid var(--maincolor);
+  color: var(--maincolor);
 }
 
 /* work carts selector */
 #work > .carttt > .cart {
   display: flexbox;
   flex-direction: column;
-  margin-top: 2rem;
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
   padding-top: 2.5rem;
   height: 20rem;
   width: 19.5rem;
@@ -386,11 +415,10 @@ nav > a {
 
 /* about selector */
 #about {
-  margin-top: 3rem;
   display: flex;
   justify-content: center;
   flex-direction: column;
-  padding: 6rem 2rem;
+  padding: 10rem 2rem 6rem 2rem;
   background: var(--bkcolor);
   color: var(--txtcolor);
   background-image: url(Resources/Images/Frame.png);
@@ -413,12 +441,11 @@ nav > a {
 /* contact selector */
 #contact {
   background: var(--txtcolor);
-  margin-top: 1rem;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  padding: 4rem 2rem;
+  padding: 0;
 }
 
 #contact form {
@@ -426,7 +453,9 @@ nav > a {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
   margin-bottom: 0;
+  width: 21.6rem;
 }
 
 input[type="text"],
@@ -441,7 +470,8 @@ input[type="email"] {
   border: none;
   border-bottom: 1px solid #dbd8d7;
   padding: 1rem;
-  margin-left: -2rem;
+  width: 17.2rem;
+  margin-top: 0.4rem;
 }
 
 .footericon {
@@ -460,6 +490,7 @@ input[type="email"] {
 
 textarea {
   border: none;
+  width: 19.2rem;
   height: 7rem;
   background: var(--txtcolor);
   font-family: 'Inter', sans-serif;
@@ -470,12 +501,11 @@ textarea {
   font-weight: 400;
   color: var(--bkcolor);
   padding-top: 1.5rem;
-  margin-left: -2rem;
+  margin-top: 0.4rem;
 }
 
 form > input[type="submit"] {
   margin-top: 2rem;
-  margin-left: 4.5rem;
   border: none;
   background: var(--maincolor);
   color: var(--txtcolor);
@@ -489,11 +519,7 @@ form > input[type="submit"] {
   width: 10rem;
 }
 
-
-#contact > form> input[type="submit"]{
-  margin-left: 2rem;
-}
-#contact > form> input[type="submit"]:hover {
+#contact > form > input[type="submit"]:hover {
   background: var(--btncol2);
   border: 1px solid var(--maincolor);
   color: var(--maincolor);
@@ -542,10 +568,6 @@ form#f2 {
     padding-left: 4.5rem;
   }
 
-  #about > h2 {
-    padding-left: 4.5rem;
-  }
-
   #contact > h2 {
     font-size: 40px;
     font-weight: 700;
@@ -558,9 +580,33 @@ form#f2 {
     padding: 2rem;
   }
 
+  #about > h2 {
+    position: relative;
+    left: -33rem;
+  }
+
   #work > .first-box > .headtext > h2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    font-size: 2.2rem;
+    font-family: 'Crete Round', serif;
+    font-weight: 500;
+    justify-items: center;
+    padding: 5rem 0 5rem 0;
     border: none;
-    padding-left: 4.5rem;
+    border-bottom: 1.5px solid var(--line);
+  }
+
+  div.first-box {
+    display: block;
+    min-width: 100%;
+  }
+
+  #work > .first-box > .headtext > h2 > div {
+    margin-left: 1rem;
+    width: 39rem;
   }
 
   nav > :nth-child(3) {
@@ -583,7 +629,7 @@ form#f2 {
     justify-content: space-between;
     align-items: center;
     width: auto;
-    padding: 1.8rem 6rem 1rem 6rem;
+    padding: 1rem 6rem 1rem 6rem;
     background: var(--navcolor);
   }
 
@@ -612,10 +658,11 @@ form#f2 {
   }
 
   #headline {
+    justify-content: center;
     background-image: url(Resources/Images/Illustration-header.png);
     background-position: top right;
     background-size: 30rem;
-    height: 30rem;
+    height: 35rem;
     padding-left: 1rem;
   }
 
@@ -791,7 +838,8 @@ form#f2 {
   }
 
   #about > button {
-    margin-left: 4.5rem;
+    position: relative;
+    left: -35%;
   }
 
   #work .cartt2 > .cart > button {
@@ -814,7 +862,13 @@ form#f2 {
   }
 
   #work > .cartt2 > #c1 > button {
-    margin-top: 17rem;
+    margin-top: 17.1rem;
+  }
+
+  #work > .cartt2 > #c1 > button:hover {
+    background: var(--btncol2);
+    border: 1px solid var(--maincolor);
+    color: var(--maincolor);
   }
 
   #work > .cartt2 > #c3 > h2 {
@@ -830,8 +884,9 @@ form#f2 {
   }
 
   #about > p {
+    position: relative;
+    left: -25.52%;
     width: 30rem;
-    margin-left: 4.5rem;
   }
 
   #work > .cartt2 > .cart > p {
@@ -849,6 +904,10 @@ form#f2 {
     flex-direction: column;
     margin: 5rem 10rem;
     font-size: larger;
+  }
+
+  #work > .first-box > .imgsection > .ttwork > p {
+    width: 100%;
   }
 
   #work > .cartt2 > .cart > ul {
@@ -874,10 +933,10 @@ form#f2 {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: auto;
+    justify-content: center;
+    align-items: center;
     column-gap: 2.5rem;
-    row-gap: 0.5rem;
     padding: 0%;
-    margin-left: -6%;
   }
 
   #work {
@@ -886,6 +945,9 @@ form#f2 {
   }
 
   #about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-image: url(Resources/Images/illustration-aboutme.png);
     background-repeat: no-repeat;
     background-size: 30rem;
@@ -904,9 +966,9 @@ form#f2 {
   .listing {
     display: flex;
     justify-content: center;
-    align-items: center;
     flex-direction: row;
-    margin-left: -7rem;
+    width: 80%;
+    margin-top: 4rem;
   }
 
   #contact {
@@ -931,10 +993,11 @@ form#f2 {
   }
 
   form#f2 input[type="submit"] {
-    margin-left: -0.1rem;
+    margin-left: -27rem;
   }
 
   form#f2 textarea {
     background: #fbf8f7;
+    width: 100%;
   }
 }
