@@ -561,7 +561,8 @@ form#f2 {
   }
 
   #about > h2 {
-    padding-left: 4.5rem;
+    position: relative;
+    left: -22rem;
   }
   div.first-box{
     display: block;
@@ -827,7 +828,8 @@ form#f2 {
   }
 
   #about > button {
-    margin-left: 4.5rem;
+    position: relative;
+    left: -34%;
   }
 
   #work .cartt2 > .cart > button {
@@ -870,8 +872,9 @@ form#f2 {
   }
 
   #about > p {
+    position: relative;
+    left: -20.52%;
     width: 30rem;
-    margin-left: 4.5rem;
   }
   #work > .first-box > .imgsection > .ttwork > p{
     width:100%;
@@ -931,6 +934,9 @@ form#f2 {
   }
 
   #about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-image: url(Resources/Images/illustration-aboutme.png);
     background-repeat: no-repeat;
     background-size: 30rem;
@@ -949,14 +955,15 @@ form#f2 {
   .listing {
     display: flex;
     justify-content: center;
-    align-items: center;
     flex-direction: row;
-    width:80rem;
-    margin-top: 5rem;
-    margin-left: 0%;
+    width:80%;
+    margin-top: 4rem;
 
   }
-
+  #about> .listing > ul{
+    display:block;
+    margin: 5rem;
+  }
   #contact {
     flex-direction: row;
   }
@@ -979,10 +986,11 @@ form#f2 {
   }
 
   form#f2 input[type="submit"] {
-    margin-left: -0.1rem;
+    margin-left: -27rem;
   }
 
   form#f2 textarea {
     background: #fbf8f7;
+    width: 100%;
   }
 }
