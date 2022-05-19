@@ -156,14 +156,14 @@ nav > a {
   border: none;
 }
 
-#work > .first-box > .headtext > h2 { 
+#work > .first-box > .headtext > h2 {
   font-size: 2.2rem;
   font-family: 'Crete Round', serif;
   font-weight: 500;
   justify-items: center;
   padding: 5rem 1rem 2rem 0;
   border-bottom: 1.5px solid var(--line);
-  width: 18rem ;
+  width: 18rem;
 }
 
 .ttwork {
@@ -177,22 +177,25 @@ nav > a {
   margin: 0;
   width: auto;
 }
-div.first-box{
+
+div.first-box {
   display: flex;
   flex-direction: column;
-  justify-content:center;
+  justify-content: center;
   align-items: center;
-  padding: 0px;
-  width:22rem;
+  padding: 0;
+  width: 22rem;
   margin-left: 0%;
   margin-bottom: 2rem;
 }
-div.imgsection{
-  padding: 0px;
-  margin: 0px;
+
+div.imgsection {
+  padding: 0;
+  margin: 0;
   width: 87%;
 }
-#work-images{
+
+#work-images {
   padding-top: 3rem;
   position: relative;
   max-width: 19.1rem;
@@ -306,7 +309,7 @@ div.imgsection{
   width: auto;
   height: 2rem;
   padding: 0.5rem 1rem;
-  margin: 0.5rem 0.5rem 0.5rem 0rem;
+  margin: 0.5rem 0.5rem 0.5rem 0;
   background-color: var(--colorb);
 }
 
@@ -331,11 +334,13 @@ div.imgsection{
   color: var(--txtcolor);
   border: none;
 }
+
 #about > button:hover {
   background: var(--btncol2);
   border: 1px solid var(--maincolor);
   color: var(--maincolor);
 }
+
 #work .carttt > .cart > button {
   height: 3rem;
   margin-top: 1rem;
@@ -354,11 +359,13 @@ div.imgsection{
   color: var(--txtcolor);
   background-color: var(--maincolor);
 }
+
 #work .carttt > .cart > button:hover {
   background: var(--btncol2);
   border: 1px solid var(--maincolor);
   color: var(--maincolor);
 }
+
 #work > .first-box > .imgsection > .ttwork > button {
   background: var(--maincolor);
   border: none;
@@ -369,6 +376,7 @@ div.imgsection{
   font-weight: 400;
   font-size: 1rem;
 }
+
 #work > .first-box > .imgsection > .ttwork > button:hover {
   background: var(--btncol2);
   border: 1px solid var(--maincolor);
@@ -437,7 +445,7 @@ div.imgsection{
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  padding: 0rem;
+  padding: 0;
 }
 
 #contact form {
@@ -463,7 +471,7 @@ input[type="email"] {
   border-bottom: 1px solid #dbd8d7;
   padding: 1rem;
   width: 17.2rem;
-  margin-top: .4rem;
+  margin-top: 0.4rem;
 }
 
 .footericon {
@@ -493,7 +501,7 @@ textarea {
   font-weight: 400;
   color: var(--bkcolor);
   padding-top: 1.5rem;
-  margin-top: .4rem;
+  margin-top: 0.4rem;
 }
 
 form > input[type="submit"] {
@@ -560,29 +568,6 @@ form#f2 {
     padding-left: 4.5rem;
   }
 
-  #about > h2 {
-    position: relative;
-    left: -22rem;
-  }
-  div.first-box{
-    display: block;
-  }
-  #work > .first-box > .headtext > h2 { 
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    width:auto;
-    font-size: 2.2rem;
-    font-family: 'Crete Round', serif;
-    font-weight: 500;
-    justify-items: center;
-    padding: 5rem 0rem 5rem 0rem;
-    border-bottom: 1.5px solid var(--line);
-  }
-  #work > .first-box > .headtext > h2> div{
-    margin-left: 1rem;
-    width: 39rem;
-  }
   #contact > h2 {
     font-size: 40px;
     font-weight: 700;
@@ -595,8 +580,33 @@ form#f2 {
     padding: 2rem;
   }
 
+  #about > h2 {
+    position: relative;
+    left: -33rem;
+  }
+
   #work > .first-box > .headtext > h2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    font-size: 2.2rem;
+    font-family: 'Crete Round', serif;
+    font-weight: 500;
+    justify-items: center;
+    padding: 5rem 0 5rem 0;
     border: none;
+    border-bottom: 1.5px solid var(--line);
+  }
+
+  div.first-box {
+    display: block;
+    min-width: 100%;
+  }
+
+  #work > .first-box > .headtext > h2 > div {
+    margin-left: 1rem;
+    width: 39rem;
   }
 
   nav > :nth-child(3) {
@@ -669,8 +679,8 @@ form#f2 {
     font-size: 1rem;
     line-height: 24px;
     width: 34em;
-    flex-grow: 0px;
-    margin: 0px 0px;
+    flex-grow: 0;
+    margin: 0 0;
     padding-left: 4.5rem;
   }
 
@@ -829,7 +839,7 @@ form#f2 {
 
   #about > button {
     position: relative;
-    left: -34%;
+    left: -35%;
   }
 
   #work .cartt2 > .cart > button {
@@ -854,11 +864,13 @@ form#f2 {
   #work > .cartt2 > #c1 > button {
     margin-top: 17.1rem;
   }
+
   #work > .cartt2 > #c1 > button:hover {
     background: var(--btncol2);
     border: 1px solid var(--maincolor);
     color: var(--maincolor);
-}
+  }
+
   #work > .cartt2 > #c3 > h2 {
     padding: 3.5rem 1rem;
   }
@@ -873,12 +885,10 @@ form#f2 {
 
   #about > p {
     position: relative;
-    left: -20.52%;
+    left: -25.52%;
     width: 30rem;
   }
-  #work > .first-box > .imgsection > .ttwork > p{
-    width:100%;
-  }
+
   #work > .cartt2 > .cart > p {
     font-family: 'Inter', sans-serif;
     font-size: 16px;
@@ -896,6 +906,10 @@ form#f2 {
     font-size: larger;
   }
 
+  #work > .first-box > .imgsection > .ttwork > p {
+    width: 100%;
+  }
+
   #work > .cartt2 > .cart > ul {
     list-style-type: none;
     display: flex;
@@ -903,9 +917,6 @@ form#f2 {
     padding: 0 1rem;
   }
 
-  div.first-box {
-    min-width:100%;
-  }
   #work > .cartt2 > .cart > ul > li {
     display: flex;
     font-family: 'Inter', sans-serif;
@@ -956,14 +967,10 @@ form#f2 {
     display: flex;
     justify-content: center;
     flex-direction: row;
-    width:80%;
+    width: 80%;
     margin-top: 4rem;
+  }
 
-  }
-  #about> .listing > ul{
-    display:block;
-    margin: 5rem;
-  }
   #contact {
     flex-direction: row;
   }
